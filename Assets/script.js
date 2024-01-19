@@ -1,21 +1,17 @@
 // Assignment code here
 // Variables needed to create a password with needed numbers, letters, and symbols
-let randomPass = "";
-let preMixedPass = "";
+
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
-function resetPass() {
-  if (randomPass == "");
-  randomPass = "";
-  preMixedPass = "";
-};
+
 
 // Write password to the #password input
 function writePassword() {
-  resetPass()
 
   function generatePassword(upperLength, lowerLength, numLength, symLength) {
+    let randomPass = "";
+    let preMixedPass = "";
     // code needed to randomly select from
     const lowerAlphabet = "abcdefghijklmnopqrstuvwxyz".split('');
     const upperAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('');
